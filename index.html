@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EAJS Digital Forum Workshop: TEI</title>
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+        <!-- styles for included libraries -->
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+        <!-- hint styles -->
+        <link href="resources/css/hint.css" rel="stylesheet" />
+        <!-- js needed in head -->
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js"></script>
+    </head>
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h5>Digital Jewish Studies workshop</h5>
+                <h5>
+                    <strong>12<sup>th</sup> EAJS congress</strong> | <strong>2023-07-16</strong> | <strong>SKW 4B-103
+                    </strong>
+                </h5>
+                <h1 class="down-100">Introduction to <br/>Text Encoding</h1>
+                <h2 class="up-25">according to the TEI</h2>
+                                    
+                <h5 class="down-25"
+                    > slides <a
+                        href="https://digicademy.github.io/EAJS2023_TEI-workshop"
+                        title="View the presentation online"
+                        >https://digicademy.github.io/EAJS2023_TEI-workshop</a><br /></h5>
+                <h6>How to use this presentation</h6>
+                <h6  style="color:gray" class="up-25">use <kbd>spacebar</kbd> or <kbd>←</kbd> arrow keys <kbd>→</kbd> to navigate between the slides</h6>
+                <h6 style="color:gray" class="up-25">use <kbd>mouse 🖱</kbd> to open a <a href="" title="hyperlink">link</a> (always
+                    blue)</h6>
+                <h5 class="down-75">
+                    <strong>
+                        <a href="https://orcid.org/0000-0003-1904-1841" target="_blank">Thomas
+                            Kollatz</a>
+                    </strong><br />
+                    <a href="http://www.adwmainz.de/en/digitalitaet/digitale-akademie.html"
+                        target="_blank">Digital Academy</a>@<a
+                        href="http://www.adwmainz.de/en/home.html" target="_blank">Akademie der
+                        Wissenschaften und Literatur | Mainz</a>
+                    <br /><img src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                        class="twitter-icon" />
+                    <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter"
+                        target="_blank">@kol_t</a>
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY
+                        4.0</a>
+                </h5>
+            </div>
+            <div class="step"><h2>Text Encoding</h2>
+                <h3>How | What | Why</h3>
+                <div class="row">
+                    <div class="six columns">
+                        <dl>
+                            <dt class="red">What</dt>
+                            <dd>… is a markup language</dd>
+                            <dd>… is XML</dd>
+                            <dd>… is TEI XML</dd>
+                            <dd>… is the TEI consortium</dd>
+                        </dl>
+                    </div>
+                    <div class="six columns">
+                        
+                        <dl>
+                            <dt class="red">How</dt>
+                            <dd>How does it work</dd>
+                        </dl>
+                        <dl class="down-50">
+                            <dt class="red">Why</dt>
+                            <dd>TEI for Digital editons</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2>Markup Language(s)</h2>
+                <h3>Typographic markup</h3>
+                <code>Syl(...)les</code>
+                <div class="substep">
+                    <code>Syl[lab]les</code>
+                </div>
+                <div class="substep down-50">
+                    <blockquote class="medium">Using typographic tokens, brackets and
+                        dots</blockquote>
+                </div>
+                <div class="substep">
+                    <h3 class="down-50">Semantic markup</h3>
+                    <code>Syl&lt;gap unit="letter" quantity="three" cert="high"/&gt;les</code>
+                </div>
+                <div class="substep">
+                    <code>Syl&lt;supplied reason="lost" cert="high"
+                        resp="TK"&gt;lab&lt;/supplied&gt;les</code>
+                </div>
+                <div class="substep down-50">
+                    <blockquote class="medium">Using semantic tags</blockquote>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="centered">What is XML</h2>
+<h3>… an Extensible Markup Language</h3>
+                <div>
+                    
+                    <ul class="line-height-one-five down-50">
+                        <li>semantic in stead of typography: <q>XML is more interested in the
+                                meaning of data than in its presentation</q></li>
+                        <li>XML is device-independent and system-independent</li>
+                        <li>XML is an interchange and communication format </li>
+                    </ul>
+                    <blockquote class="medium down-50"> Generalizing … we define markup, or
+                        (synonymously) encoding, as any means of making explicit an interpretation
+                        of a text. </blockquote>
+                    <p class="right x-small">
+                        <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html"
+                            target="_blank">A Gentle Introduction to XML</a>
+                    </p>
+                </div>
+            </div>
+            <div class="step">
+                <h2>xml-structures</h2>
+                <h3>root | element</h3>
+                <ul class="line-height-one-five">
+                    <li>
+                        <pre><code>&lt;text&gt;
+&lt;quote&gt;To be or not to be&lt;/quote&gt;
+is one of the best known &lt;name&gt;Shakespeare&lt;/name&gt; quotations
+&lt;/text&gt; </code></pre>
+                    </li>
+                    <li>XML uses descriptive markup: A textual unit (aka element) is tagged by
+                        inserting a start-tag at the beginning of the element and an end-tag at the
+                        end of the unit</li>
+                    <li>XML documents must be well-formed</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h2>Who's afraid of angle brackets?</h2>
+                <h3>element | attribute | value</h3>
+                <dl>
+                    <dt>
+                        <code>&lt;tag&gt;</code>
+                    </dt>
+                    <dd>start tag marks the begin of an element</dd>
+                    <dt>
+                        <code>&lt;/tag&gt;</code>
+                    </dt>
+                    <dd>end tag marks the end of an element</dd>
+                    <dt>
+                        <code>&lt;tag&gt;content&lt;/tag&gt;</code>
+                    </dt>
+                    <dd>text unit with tagged content</dd>
+                    <dt>
+                        <code>&lt;lineBegins/&gt;</code>
+                    </dt>
+                    <dd>empty tag | milestone – element with no content</dd>
+                    <dt>
+                        <code>&lt;tag attribute="value"&gt;</code>
+                    </dt>
+                    <dd>tags can have attributes with values</dd>
+                </dl>
+            </div>
+            <div class="step">
+                <h2>What does well-formed mean</h2>
+                <h3>definition</h3>
+                <blockquote> A well-formed XML [...] obeys the following simple rules:<ul
+                        class="line-height-one-five">
+                        <li>there is a single element enclosing the whole document: this is known as
+                            the root element;</li>
+                        <li>each element is completely contained by the root element, or by an
+                            element that is so contained;</li>
+                        <li>elements do not partially overlap one another;</li>
+                        <li>a tag explicitly marks the start and end of each element.</li>
+                    </ul>
+                </blockquote>
+                <p class="x-small right">
+                    <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html#SG132"
+                        target="_blank">A Gentle Introduction to XML</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2>Example</h2>
+                <h3>switch to <a href="https://www.oxygenxml.com/xml_editor.html" target="_blank"
+                        >oXygen XML Editor</a></h3>
+            </div>
+            <div class="step">
+                <h2>What is TEI XML</h2>
+                <h3>Text Encoding Initiative</h3>
+                <blockquote class="medium down-50">The <span class="highlight">Text Encoding
+                        Initiative</span> (TEI) is a consortium which collectively develops and
+                    maintains a <span class="highlight">standard for the representation of texts in
+                        digital form</span>. Its chief deliverable is a set of Guidelines which
+                    specify <span class="highlight">encoding methods for machine-readable
+                        texts</span>, chiefly in the humanities, social sciences and linguistics.
+                    Since 1994, the TEI Guidelines have been widely used by libraries, museums,
+                    publishers, and individual scholars to present texts for online research,
+                    teaching, and preservation. In addition to the Guidelines themselves, the
+                    Consortium provides a variety of resources and training events for learning TEI,
+                    information on projects using the TEI, a bibliography of TEI-related
+                    publications, and software developed for or adapted to the TEI.</blockquote>
+                <p class="x-small right">
+                    <a href="http://www.tei-c.org" target="_blank">tei-c.org</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2>TEI delivers Guidelines</h2>
+                <h3>Guidelines or Standard</h3>
+                <p class="medium"> The TEI Guidelines for Electronic <span class="highlight">Text
+                        Encoding and Interchange</span> define and document a <span
+                        class="highlight">markup language for representing the structural,
+                        renditional, and conceptual features of texts</span>. They focus (though not
+                    exclusively) on the encoding of documents in the humanities and social sciences,
+                    and in particular on the representation of primary source materials for research
+                    and analysis. These guidelines are expressed as a modular, extensible XML
+                    schema, accompanied by detailed documentation, and are published under an
+                    open-source license. </p>
+                <p class="right x-small">
+                    <a href="http://www.tei-c.org" target="_blank"
+                        >http://www.tei-c.org/release/doc/tei-p5-doc/en/html/</a>
+                </p>
+            </div>
+            <div class="step">
+                <figure class="mfp-lightbox">
+                    <a href="resources/img/tei_toc.png">
+                        <img src="resources/img/tei_toc.png" title="TEI_guidelines" />
+                    </a>
+                </figure>
+                <p class="x-small right">
+                    <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html"
+                        target="_blank">toc</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2>example</h2>
+                <h3> correspondences, I</h3>
+                <pre><code>Krefeld 25/3/2022
+Dear Daniel, 
+I'm looking forward to see you today. 
+best wishes
+Thomas</code></pre>
+                <p class="x-small right ">
+                    <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html#DSOC"
+                        target="_blank">4.2.2 Openers and Closers</a>
+                </p>
+                <p class="x-small right">
+                    <a href="data/correspondence.xml" target="_blank">result</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2>example</h2><h3> correspondences, II</h3>
+                <table class="x-small">
+                    <thead>
+                        <tr>
+                            <th>from</th>
+                            <th>to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Thomas Kollatz</td>
+                            <td>Daniel Stökl ben Ezra</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <pre><code>https://d-nb.info/gnd/1063010942</code></pre>
+                            </td>
+                            <td>
+                                <pre><code>https://d-nb.info/gnd/128568895</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Krefeld</td>
+                            <td>Paris</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <pre><code>https://www.geonames.org/2884509</code></pre>
+                            </td>
+                            <td>
+                                <pre><code>https://www.geonames.org/2988507</code></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <pre><code>25. März 2022</code></pre>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <p class="x-small right">
+                    <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD44CD"
+                        target="_blank">2.4.6 Correspondence Description</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2>example</h2><h3>Avot 1,18</h3>
+                <pre dir="rtl"><code>רבן שמעון בן גמליאל אומר
+על שלשה דברים העולם עומד 
+על הדין 
+ועל האמת 
+ועל השלום
+שנאמר                  
+אמת ומשפט שלום שפטו בשעריכם</code></pre>
+                <p class="right x-small">source: <a
+                        href="https://www.sefaria.org/Pirkei_Avot.1.18?ven=Mishnah_Yomit_by_Dr._Joshua_Kulp&amp;vhe=Torat_Emet_357&amp;lang=bi&amp;lookup=רבן%20שמעון%20בן%20גמליאל%20אומר%2C%20על%20שלשה%20דברים%20העולם%20עומד%2C%20על%20הדין%20ועל%20האמת%20ועל%20השלום%2C%20שנאמר%20(זכריה%20ח)%20אמת%20ומשפט%20שלום%20שפטו%20בשעריכם%3A&amp;with=Lexicon&amp;lang2=en"
+                        >Sefaria</a>
+                <p class="right x-small">
+                    <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/DR.html#DRSP"
+                        target="_blank">7.2.2 Speeches and Speakers</a>
+                </p>
+                <p class="x-small right">
+                    <a href="data/avot_A.xml" target="_blank">result a</a>
+                </p>
+                <p class="x-small right">
+                    <a href="data/avot_B.xml" target="_blank">result b</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2>example</h2><h3>hha-2547</h3>
+                <pre dir="rtl"><code>‎קינה‏
+‎‏לבן יקיר בוכים בך
+‎ילד הרך מה רב טובך‏
+‎‏ביום מר שושן נבך‏
+‎‏יהודא ליב עפר שבך‏
+‎‏בהר״ר יצחק ריינבך‏</code></pre>
+                <pre><code>http://www.steinheim-institut.de/daten/picshha/xl/2547_FR_0206040119.jpg</code></pre>
+                <p class="x-small right">source: <a
+                        href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-2547&amp;release=beta"
+                        target="_blank">epidat, hha-2547</a>
+                <p class="x-small right">
+                    <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/VE.html"
+                        target="_blank">6 Verse</a>
+                </p>
+                <p class="x-small right">
+                    <a href="data/lg_a.xml" target="_blank">result a</a>
+                </p>
+                <p class="x-small right">
+                    <a href="data/lg_b.xml" target="_blank">result b</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2>you are not alone</h2>
+                <ul class="line-height-one-five">
+                    <li>
+                        <a href="https://tei-c.org/support/#tei-l" target="_blank">TEI-L
+                            mailing-list</a>
+                    </li>
+                    <li>
+                        <a href="https://tei-c.org/support/Learn/" target="_blank">Learn the TEI</a>
+                    </li>
+                    <li>
+                        <a href="https://tei-c.org/activities/sig/" target="_blank">Special Interest
+                            Groups (SIGs)</a>
+                    </li>
+                    <li>
+                        <a href="http://teibyexample.org" target="_blank">TEI by Example</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="step">
+                <h2>Why</h2>
+                <p>… open for discussion …</p>
+            </div>
+            <div class="step">
+                <h2>literature</h2>
+                <h3>Introduction to TEI</h3>
+                <ul class="small line-height-one-five">
+                    <li>
+                        <a href="http://www.tei-c.org/Guidelines/P5/" target="_blank">TEI: P5
+                            Guidelines</a>
+                    </li>
+                    <li>Lou Burnard: <a href="http://books.openedition.org/oep/426" target="_blank"
+                            >WHAT IS THE TEXT ENCODING INITIATIVE?</a> How to add intelligent markup
+                        to digital resources</li>
+                </ul>
+                <ul class="small line-height-one-five">
+                    <li><a
+                            href="https://docs.google.com/presentation/d/1HaPQ7lhDTQ7dp3hHTlsLM6gC6Wtu9d8-PBULcbNzKvc/edit#slide=id.p"
+                            target="_blank">Introduction into TEI</a>, Sinai Rusinek and Yael
+                        Netzer. – Bar Ilan Workshop 2019</li>
+                    <li><a href="https://digicademy.github.io/2018_EAJS_WS_1" target="_blank">Epidoc
+                            – Epigraphic Documents in TEI XML</a>, Max Grüntgens and Thomas Kollatz.
+                        – EAJS EpiDoc TEI XML Winterschool, Utrecht 2018</li>
+                </ul>
+            </div>
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script src="resources/js/unite.gallery.js"></script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30,
+                hashnav: true
+            });</script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+            var obj = impress();
+            obj.init();
+            initSlideNo(obj);</script>
+        <!--<script>
+            var videoStep = document.getElementById("video-step");
+var video = document.getElementById("video");
+videoStep.addEventListener("impress:stepenter", function() {
+    video.play();
+}, false);
+videoStep.addEventListener("impress:stepleave", function() {
+    video.pause();
+}, false);
+        </script>-->
+        <script>
+            var videos = document.getElementsByTagName("video");
+            Array.prototype.forEach.call(videos, function (video) {
+                var videoStep = video.closest(".step");
+                videoStep.addEventListener("impress:stepenter", function () {
+                    video.play();
+                },
+                false);
+                videoStep.addEventListener("impress:stepleave", function () {
+                    video.pause();
+                },
+                false);
+            });</script>
+    </body>
+</html>

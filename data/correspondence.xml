@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <correspDesc>
+         <correspAction type="sent">
+            <persName ref="https://d-nb.info/gnd/1063010942">Thomas Kollatz</persName>
+            <placeName ref="https://www.geonames.org/2884509">Krefeld</placeName>
+            <date when="2022-03-25"/>
+         </correspAction>
+         <correspAction type="received">
+            <persName ref="https://d-nb.info/gnd/128568895">Daniel Stökl ben Ezra</persName>
+            <placeName ref="https://www.geonames.org/2988507">Paris</placeName>
+         </correspAction>
+      </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <opener>
+               <dateline>
+                  <placeName>Krefeld</placeName>
+                  <date when="2022-03-25">25/3/2022</date>
+               </dateline>
+               <salute>Dear <name>Daniel</name>,</salute>
+            </opener>
+            <p>I'm looking forward to see you today.</p>
+            <closer>
+               <salute>best wishes</salute>
+               <name>Thomas</name></closer>
+         </div>
+      </body>
+   </text>
+</TEI>
