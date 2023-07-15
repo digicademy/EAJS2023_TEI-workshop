@@ -15,9 +15,9 @@ In the following four short sessions, individual aspects will be highlighted. Th
 
 **Monday** morning: Marking up texts, dealing with variants and critical apparatus
 
-~~Tuesday morning: Marking up poetic and dramatic texts~~
+**Tuesday** CANCELLED ~~morning: Marking up poetic and dramatic texts~~
 
 **Wednesday** morning: Metadata, especially metadata for individual text genres (letters, inscriptions) and manuscripts 
 
-~~Thursday  morning: Customizing: How do I configure my TEI (ODD); How do I take advantage of the hierarchical structure (xPath)?~~
+**Thursday** CANCELLED ~~  morning: Customizing: How do I configure my TEI (ODD); How do I take advantage of the hierarchical structure (xPath)?~~
 
