@@ -118,6 +118,7 @@
                             <dd>… is XML</dd>
                             <dd>… is TEI XML</dd>
                             <dd>… is the TEI consortium</dd>
+                            <dd>… is TEI customization</dd>
                         </dl>
                     </div>
                     <div class="six columns">
@@ -128,14 +129,14 @@
                         </dl>
                         <dl class="down-50">
                             <dt class="red">Why</dt>
-                            <dd>TEI for Digital editons</dd>
+                            <dd>TEI for Digital editions</dd>
                         </dl>
                     </div>
                 </div>
             </div>
             <div class="step">
                 <h2>Markup Language(s)</h2>
-                <h3>Typographic markup</h3>
+                <h3>Typographic markup | Semantic markup</h3>
                 <code>Syl(...)les</code>
                 <div class="substep">
                     <code>Syl[lab]les</code>
@@ -197,31 +198,31 @@ is one of the best known &lt;name&gt;Shakespeare&lt;/name&gt; quotations
                 <h3>element | attribute | value</h3>
                 <dl>
                     <dt>
-                        <code>&lt;tag&gt;</code>
+                        <code>&lt;element&gt;</code>
                     </dt>
                     <dd>start tag marks the begin of an element</dd>
                     <dt>
-                        <code>&lt;/tag&gt;</code>
+                        <code>&lt;/element&gt;</code>
                     </dt>
                     <dd>end tag marks the end of an element</dd>
                     <dt>
-                        <code>&lt;tag&gt;content&lt;/tag&gt;</code>
+                        <code>&lt;element&gt;content&lt;/element&gt;</code>
                     </dt>
-                    <dd>text unit with tagged content</dd>
+                    <dd>textual unit with tagged content</dd>
                     <dt>
                         <code>&lt;lineBegins/&gt;</code>
                     </dt>
                     <dd>empty tag | milestone – element with no content</dd>
                     <dt>
-                        <code>&lt;tag attribute="value"&gt;</code>
+                        <code>&lt;element attribute="value"&gt;</code>
                     </dt>
-                    <dd>tags can have attributes with values</dd>
+                    <dd>elements can have attributes with specific values</dd>
                 </dl>
             </div>
             <div class="step">
                 <h2>What does well-formed mean</h2>
-                <h3>definition</h3>
-                <blockquote> A well-formed XML [...] obeys the following simple rules:<ul
+                <h3>Definition</h3>
+                <blockquote>A well-formed XML [...] obeys the following simple rules:<ul
                         class="line-height-one-five">
                         <li>there is a single element enclosing the whole document: this is known as
                             the root element;</li>
@@ -237,7 +238,7 @@ is one of the best known &lt;name&gt;Shakespeare&lt;/name&gt; quotations
                 </p>
             </div>
             <div class="step">
-                <h2>Example</h2>
+                <h2>hands on</h2>
                 <h3>switch to <a href="https://www.oxygenxml.com/xml_editor.html" target="_blank"
                         >oXygen XML Editor</a></h3>
             </div>
@@ -285,7 +286,7 @@ is one of the best known &lt;name&gt;Shakespeare&lt;/name&gt; quotations
                 </figure>
                 <p class="x-small right">
                     <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html"
-                        target="_blank">toc</a>
+                        target="_blank">TEI toc</a>
                 </p>
             </div>
             <div class="step">
@@ -300,9 +301,7 @@ Thomas</code></pre>
                     <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html#DSOC"
                         target="_blank">4.2.2 Openers and Closers</a>
                 </p>
-                <p class="x-small right">
-                    <a href="data/correspondence.xml" target="_blank">result</a>
-                </p>
+                
             </div>
             <div class="step">
                 <h2>example</h2><h3> correspondences, II</h3>
@@ -354,6 +353,13 @@ Thomas</code></pre>
                 </p>
             </div>
             <div class="step">
+                <h2>hands on</h2>
+                <h3>Encoding of a rather silly correspondence</h3>
+                <p class="substep">
+                    <a href="data/correspondence.xml" target="_blank">result</a>
+                </p>
+            </div>
+            <div class="step">
                 <h2>example</h2><h3>Avot 1,18</h3>
                 <pre dir="rtl"><code>רבן שמעון בן גמליאל אומר
 על שלשה דברים העולם עומד 
@@ -368,12 +374,15 @@ Thomas</code></pre>
                 <p class="right x-small">
                     <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/DR.html#DRSP"
                         target="_blank">7.2.2 Speeches and Speakers</a>
+<br/>                    <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COLI" target="blank">3.8 Lists</a>
                 </p>
-                <p class="x-small right">
-                    <a href="data/avot_A.xml" target="_blank">result a</a>
-                </p>
-                <p class="x-small right">
-                    <a href="data/avot_B.xml" target="_blank">result b</a>
+
+</div>
+            <div class="step"><h2>hands on</h2>
+                <h3>Try to find an adequate Encoding for Avot</h3><p class="substep">
+                    <a href="data/avot_A.xml" target="_blank">result a</a> models Avot as collection | list of sayings
+                <br/>
+                    <a href="data/avot_B.xml" target="_blank">result b</a> models Avot as speech act
                 </p>
             </div>
             <div class="step">
@@ -390,17 +399,32 @@ Thomas</code></pre>
                         target="_blank">epidat, hha-2547</a>
                 <p class="x-small right">
                     <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/VE.html"
-                        target="_blank">6 Verse</a>
-                </p>
-                <p class="x-small right">
-                    <a href="data/lg_a.xml" target="_blank">result a</a>
-                </p>
-                <p class="x-small right">
-                    <a href="data/lg_b.xml" target="_blank">result b</a>
+                        target="_blank">6 Verse</a><br/><a href="https://epidoc.stoa.org/gl/latest/" target="blank">EpiDoc: Epigraphic Documents in TEI XML</a><br/><a href="https://kollatzthomas.github.io/Bar_Ilan_EpiDoc_workshop/" target="blank">EpiDoc Half-Day workshop | Bar-Ilan</a><br/><a href="https://digicademy.github.io/2018_EAJS_WS_1" target="blank">EAJS EpiDoc winterschool</a>
                 </p>
             </div>
             <div class="step">
+                <h2>hands on</h2>
+                <h3>Try to encode the poem</h3>
+                <p class="substep">
+                    <a href="data/lg_a.xml" target="_blank">result a</a> poetic lines and rhyme
+                <br/>
+                    <a href="data/lg_b.xml" target="_blank">result b</a> acrostic
+                </p>
+            </div>
+            <div class="step">
+                <h2>critical apparatus</h2>
+                <h3>&lt;app&gt; &lt;lem&gt; &lt;rdg&gt;</h3>
+                <p>Monday</p>
+            </div>
+            <div class="step">
+                <h2>metadata</h2>
+                <h3>teiHeader</h3>
+                <p>Wednesday</p>
+            </div>
+
+                <div class="step">
                 <h2>you are not alone</h2>
+                <h3>TEI is a world-wide community</h3>
                 <ul class="line-height-one-five">
                     <li>
                         <a href="https://tei-c.org/support/#tei-l" target="_blank">TEI-L
