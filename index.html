@@ -53,22 +53,21 @@
         <div id="impress">
             <div class="step">
                 <h5>Digital Jewish Studies workshop</h5>
-                
-                <h1 class="down-75">Introduction to <br/>Text Encoding</h1>
+                <h1 class="down-75">Introduction to <br />Text Encoding</h1>
                 <h2 class="up-25">according to the TEI</h2>
-                                    
-                
                 <h6>How to use this presentation</h6>
-                <h6  style="color:gray" class="up-25"><kbd>spacebar</kbd> or <kbd>←</kbd> arrow keys <kbd>→</kbd> to navigate between the slides</h6>
-                <h6 style="color:gray" class="up-25"><kbd>mouse 🖱</kbd> to open a <a href="" title="hyperlink">link</a> (always
-                    blue)</h6>
+                <h6 style="color:gray" class="up-25"><kbd>spacebar</kbd> or <kbd>←</kbd> arrow keys
+                        <kbd>→</kbd> to navigate between the slides</h6>
+                <h6 style="color:gray" class="up-25"><kbd>mouse 🖱</kbd> to open a <a href=""
+                        title="hyperlink">link</a> (always blue)</h6>
                 <div class="row">
                     <div class="eight columns down-25">
                         <h4 class="medium">
                             <a href="https://orcid.org/0000-0003-1904-1841" target="_blank">Thomas
-                                Kollatz</a><br/>🔗 <a href="https://digicademy.github.io/EAJS2023_TEI-workshop"
-                                    title="View the presentation online"
-                                    >https://digicademy.github.io/EAJS2023_TEI-workshop</a>
+                                Kollatz</a><br />🔗 <a
+                                href="https://digicademy.github.io/EAJS2023_TEI-workshop"
+                                title="View the presentation online"
+                                >https://digicademy.github.io/EAJS2023_TEI-workshop</a>
                             <br />
                             <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
                                 >CC-BY 4.0</a>
@@ -77,7 +76,7 @@
                     <div class="four columns">
                         <figure class="mfp-lightbox">
                             <a href="resources/img/eajs_logo.jpg">
-                                <img src="resources/img/eajs_logo.jpg" alt="EAJS Logo">
+                                <img src="resources/img/eajs_logo.jpg" alt="EAJS Logo" />
                             </a>
                         </figure>
                     </div>
@@ -87,28 +86,33 @@
                 <h2>schedule</h2>
                 <h3>when | where | what</h3>
                 <table>
-                    <tr><th>when</th><th></th><th>where</th><th>what</th>
+                    <tr>
+                        <th>when</th>
+                        <th></th>
+                        <th>where</th>
+                        <th>what</th>
                     <tr>
                         <td>SUN 16.07.</td>
                         <td>12:15-15:00</td>
-                        <td>SKW 4B-103</td>
+                        <td>SKW 4B-117</td>
                         <td>Introduction to the Principles of Text Mark-up with TEI XML</td>
                     </tr>
                     <tr>
                         <td>MON 17.07.</td>
                         <td>07:45-08:45</td>
-                        <td>SKW 4B-103</td>
+                        <td>SKW 4B-117</td>
                         <td>Marking up texts, dealing with variants and critical apparatus</td>
                     </tr>
                     <tr>
                         <td>WED 19.07.</td>
                         <td>07:45-08:45</td>
-                        <td>SKW 4B-103</td>
+                        <td>SKW 4B-117</td>
                         <td>Metadata, (letters, inscriptions, manuscripts)</td>
                     </tr>
                 </table>
             </div>
-            <div class="step"><h2>Text Encoding</h2>
+            <div class="step">
+                <h2>Text Encoding</h2>
                 <h3>How | What | Why</h3>
                 <div class="row">
                     <div class="six columns">
@@ -122,7 +126,6 @@
                         </dl>
                     </div>
                     <div class="six columns">
-                        
                         <dl>
                             <dt class="red">How</dt>
                             <dd>How does it work</dd>
@@ -159,9 +162,8 @@
             </div>
             <div class="step">
                 <h2 class="centered">What is XML</h2>
-<h3>… an Extensible Markup Language</h3>
+                <h3>… an Extensible Markup Language</h3>
                 <div>
-                    
                     <ul class="line-height-one-five down-50">
                         <li>semantic in stead of typography: <q>XML is more interested in the
                                 meaning of data than in its presentation</q></li>
@@ -301,10 +303,10 @@ Thomas</code></pre>
                     <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html#DSOC"
                         target="_blank">4.2.2 Openers and Closers</a>
                 </p>
-                
             </div>
             <div class="step">
-                <h2>example</h2><h3> correspondences, II</h3>
+                <h2>example</h2>
+                <h3> correspondences, II</h3>
                 <table class="x-small">
                     <thead>
                         <tr>
@@ -360,7 +362,18 @@ Thomas</code></pre>
                 </p>
             </div>
             <div class="step">
-                <h2>example</h2><h3>Avot 1,18</h3>
+                <h2>XML and RTL-languages</h2>
+                <h3>@xml:lang</h3>
+                <p>In order to work with a right-to-left language like in Hebrew a few steps are to
+                    be taken</p>
+                <ul>
+                    <li>provide <code>&lt;xml lang="he"&gt;</code></li>
+                    <li>switch to the author view</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h2>example</h2>
+                <h3>Avot 1,18</h3>
                 <pre dir="rtl"><code>רבן שמעון בן גמליאל אומר
 על שלשה דברים העולם עומד 
 על הדין 
@@ -374,19 +387,23 @@ Thomas</code></pre>
                 <p class="right x-small">
                     <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/DR.html#DRSP"
                         target="_blank">7.2.2 Speeches and Speakers</a>
-<br/>                    <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COLI" target="blank">3.8 Lists</a>
+                    <br />
+                    <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COLI"
+                        target="blank">3.8 Lists</a>
                 </p>
-
-</div>
-            <div class="step"><h2>hands on</h2>
-                <h3>Try to find an adequate Encoding for Avot</h3><p class="substep">
-                    <a href="data/avot_A.xml" target="_blank">result a</a> models Avot as collection | list of sayings
-                <br/>
+            </div>
+            <div class="step">
+                <h2>hands on</h2>
+                <h3>Try to find an adequate Encoding for Avot</h3>
+                <p class="substep">
+                    <a href="data/avot_A.xml" target="_blank">result a</a> models Avot as collection
+                    | list of sayings <br />
                     <a href="data/avot_B.xml" target="_blank">result b</a> models Avot as speech act
                 </p>
             </div>
             <div class="step">
-                <h2>example</h2><h3>hha-2547</h3>
+                <h2>example</h2>
+                <h3>hha-2547</h3>
                 <pre dir="rtl"><code>‎קינה‏
 ‎‏לבן יקיר בוכים בך
 ‎ילד הרך מה רב טובך‏
@@ -399,30 +416,114 @@ Thomas</code></pre>
                         target="_blank">epidat, hha-2547</a>
                 <p class="x-small right">
                     <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/VE.html"
-                        target="_blank">6 Verse</a><br/><a href="https://epidoc.stoa.org/gl/latest/" target="blank">EpiDoc: Epigraphic Documents in TEI XML</a><br/><a href="https://kollatzthomas.github.io/Bar_Ilan_EpiDoc_workshop/" target="blank">EpiDoc Half-Day workshop | Bar-Ilan</a><br/><a href="https://digicademy.github.io/2018_EAJS_WS_1" target="blank">EAJS EpiDoc winterschool</a>
+                        target="_blank">6 Verse</a>
+                    <br />
+                    <a href="https://epidoc.stoa.org/gl/latest/" target="blank">EpiDoc: Epigraphic
+                        Documents in TEI XML</a>
+                    <br />
+                    <a href="https://kollatzthomas.github.io/Bar_Ilan_EpiDoc_workshop/"
+                        target="blank">EpiDoc Half-Day workshop | Bar-Ilan</a>
+                    <br />
+                    <a href="https://digicademy.github.io/2018_EAJS_WS_1" target="blank">EAJS EpiDoc
+                        winterschool</a>
                 </p>
             </div>
             <div class="step">
                 <h2>hands on</h2>
                 <h3>Try to encode the poem</h3>
                 <p class="substep">
-                    <a href="data/lg_a.xml" target="_blank">result a</a> poetic lines and rhyme
-                <br/>
-                    <a href="data/lg_b.xml" target="_blank">result b</a> acrostic
-                </p>
+                    <a href="data/lg_a.xml" target="_blank">result a</a> poetic lines and rhyme <br />
+                    <a href="data/lg_b.xml" target="_blank">result b</a> acrostic </p>
             </div>
             <div class="step">
                 <h2>critical apparatus</h2>
-                <h3>&lt;app&gt; &lt;lem&gt; &lt;rdg&gt;</h3>
-                <p>Monday</p>
+                <h3>module</h3>
+                <blockquote>Scholarly editions of texts, especially texts of great antiquity or
+                    importance, often record some or all of the known variations among different
+                    witnesses to the text. Witnesses to a text may include authorial or other
+                    manuscripts, printed editions of the work, early translations, or quotations of
+                    a work in other texts. Information concerning variant readings of a text may be
+                    accumulated in highly structured form in a critical apparatus of variants. </blockquote>
+                <p class="right x-small">
+                    <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/TC.html"
+                        target="blank">12 Critical Apparatus</a>
+                </p>
             </div>
+            <div class="step">
+                <h2>Encoding</h2>
+                <h3>elements and attributes</h3>
+                <table class="medium">
+                    <tr>
+                        <td>
+                            <code>&lt;app&gt;</code>
+                        </td>
+                        <td>(apparatus entry) contains one entry in a critical apparatus, with an
+                            optional lemma and usually one or more readings or notes on the relevant
+                            passage.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;lem&gt;</code>
+                        </td>
+                        <td>(lemma) contains the lemma, or base text, of a textual variation.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;rdg&gt;</code>
+                        </td>
+                        <td>(reading) contains a single reading within a textual variation.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;listWit&gt;</code>
+                        </td>
+                        <td>(witness list) lists definitions for all the witnesses referred to by a
+                            critical apparatus, optionally grouped hierarchically.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;witness&gt;</code>
+                        </td>
+                        <td>(witness) contains either a description of a single witness referred to
+                            within the critical apparatus, or a list of witnesses which is to be
+                            referred to by a single sigil.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step">
+                <h2>&lt;listWit&gt;</h2>
+                <h3>//&lt;teiHeader&gt;</h3>
+                <pre><code class="linenumbers">&lt;sourceDesc&gt;
+ &lt;listWit&gt;
+   &lt;witness n="1" xml:id="a"&gt;Variant A&lt;/witness&gt;
+   &lt;witness n="2" xml:id="b"&gt;Variant B&lt;/witness&gt;
+ &lt;/listWit&gt;
+&lt;/sourceDesc&gt;
+</code>
+                </pre>
+            </div>
+            <div class="step">
+                <h2>&lt;app&gt;</h2>
+                <h3>//&lt;text&gt;</h3>
+                <pre><code class="linenumbers">&lt;p&gt;‎‏אנכנו נפגשים‎&lt;app&gt;
+ &lt;rdg wit="#a"&gt;‎‏בפרנקפורט‏‎&lt;/rdg&gt;
+ &lt;rdg wit="#b"&gt;‎‏בפפ״ם‎&lt;/rdg&gt;
+&lt;/app&gt; ‎‏באוניברסיטה‏‎ &lt;/p&gt;
+</code></pre>
+                <p class="right x-small">
+                    <a href="data/crit_app.xml" target="blank">crit_app.xml</a>
+            </div>
+            <div class="step">
+                <h2>the versioning machine</h2>
+                <h3>a tool for textual editors</h3>
+                <blockquote>The Versioning Machine is a framework and an interface for displaying multiple versions of text encoded according to the Text Encoding Initiative (TEI) Guidelines, and is P5 compatible. While the VM provides for features typically found in critical editions, such as annotation and introductory material, it also takes advantage of the opportunities afforded by electronic publication to allow for the comparison diplomatic versions of witnesses, and the ability to easily compare an image of the manuscript with a diplomatic version. </blockquote>
+                <p class="x-small right"><a href="http://v-machine.org/">versioning machine</a></p>            </div>
             <div class="step">
                 <h2>metadata</h2>
                 <h3>teiHeader</h3>
                 <p>Wednesday</p>
             </div>
-
-                <div class="step">
+            <div class="step">
                 <h2>you are not alone</h2>
                 <h3>TEI is a world-wide community</h3>
                 <ul class="line-height-one-five">

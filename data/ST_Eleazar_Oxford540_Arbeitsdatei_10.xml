@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/tei_toRoll.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!-- Kurztitel für menschliche "reader" -->
+            <title>Sefer Tagi</title>
+            <editor role="main">Dana</editor>
+         </titleStmt>
+         <publicationStmt>
+            <!-- Hier könnte auch ein Link zur Webseite des Projektes stehen -->
+            <publisher>toRoll</publisher>
+            <availability>
+               <!-- by bzw. by-sa sind freie Lizenzen -->
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This file is licensed under the terms of the Creative-Commons-License CC BY
+                     4.0</p>
+               </licence>
+            </availability>
+            <idno type="file">ST_Eleazar_Oxford540</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:lang="de">
+               <msIdentifier>
+                  <settlement>Oxford</settlement>
+                  <repository>Bodleian Library <origDate>1639</origDate></repository>
+                  <idno type="shelfmark" xml:id="Tagin_Oxf_540">Ms.Opp.540</idno>
+               </msIdentifier>
+               <!-- TableofContent -->
+               <msContents>
+                  <msItem>
+                     <!-- z.B.: <locus from="18v" to="27r" scheme="folio"/> -->
+                     <locus>from="236r" to="264v" scheme="folio"</locus>
+                     <author ana="attributed">Eleazar ben Yehuda of Worms</author>
+                     <title>Sefer Tagi</title>
+                     <title type="alt">Sefer Tagin</title>
+                     <filiation>
+                        <listWit>
+                           <witness xml:id="Tagin_Oxf_111">
+                              <idno type="shelfmark">Oxford, Bodleian Library, Ms.Opp.111</idno>
+                              <origDate>1720</origDate><locus>from="223r" to="255v"
+                                 scheme="folio"</locus></witness>
+                           <witness xml:id="Tagin_Shunak">
+                              <idno type="shelfmark">Jerusalem, NLI, Shunak
+                                 3</idno><locus>from=<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>"1r"
+                                 to="51v<?oxy_custom_end?>" scheme="folio"</locus></witness>
+                        </listWit>
+                        <label/>
+                        <desc/>
+                     </filiation>
+                  </msItem>
+               </msContents>
+               <history>
+                  <origin>
+                     <origPlace key="O00001">Ashkenaz</origPlace>
+                     <origDate>from 1160 to 1300</origDate>/> </origin>
+                  <provenance>
+                     <listEvent>
+                        <event>
+                           <label/>
+                           <desc> </desc>
+                        </event>
+                     </listEvent>
+                  </provenance>
+               </history>
+               <additional>
+                  <surrogates>
+                     <bibl><ref target="http://anylink.edu"/></bibl>
+                  </surrogates>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="../images/ST_Eleazar_oxford540_images/ST_Eleazar_Oxford540_247v_shin_4.bmp"
+         xml:id="ST_Oxf_540_247v_shin_4"/>
+      <graphic
+         url="../images/ST_Eleazar_oxford540_images/ST_Eleazar_Oxford540_247v_shin_7_valimshol.bmp"
+         xml:id="ST_Oxf_540_247v_shin_7_valimshol"/>
+   </facsimile>
+   <text xml:lang="he" xml:space="preserve">
+
+
+
+      <body>
+               
+         <p>
+
+ 
+<?oxy_custom_start type="oxy_content_highlight" color="255,198,140"?> <pb n="246v"/><?oxy_custom_end?>
+
+נגדי מלכותא דארעא דקטלא שתות לא נקראת קטלנית ולמה בערב אומר משנה עיתים ומחליף זמנים ולא
+בבקר כי בלילה נאמר לדניאל <quote source="Dan_2_21" type="biblical">מהשנא עידניא וזימניא</quote> וכן התרנגול כשמקדים לקרוא בלילה משתנה הזמן כי למחר
+יהיו עננים וענן נכנס בתוך חוטמו של תרנגול ויודע<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg type="textcritical" wit="#Tagin_Shunak">העת</rdg></app><?oxy_custom_end?>הדעת ועוד פעמים לבנה זורחת בלילה ופעמים מחסרת
+לכך משנה<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">עתים</rdg></app><?oxy_custom_end?>ומחליף אומר בלילה ולכך במועדים אין אומר זמן אלא בלילה ועתים וזמנים ידועים על ידי כוכבים
+ומזלות ויקרא קרא גזר שתי מדות מידת היום וכשיחפוץ יהיה לא יום ולא לילה וכשיחפוץ יהיה זה יום לילה יהיה
+וכן לילה לפי שלא יתכן שיהפוך שהרי כתיב <quote source="Jes_40_8" type="biblical">ודבר אלהינו יקום לעולם</quote> ומאחר שגזר יום בעתו ולילה<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">בעתו</rdg></app><?oxy_custom_end?>בעתה לא יתכן ואיך
+יתכן להפוך לכך רמז שני <term type="tagin">תגין</term> על <rs type="script" subtype="tagin" style="qof_2">ק</rs>' <rs type="script" subtype="tagin" style="qof_2">ק</rs>' שבאותה שעה שקדם וגזר על מידת יום ועל מידת לילה גזר באותו דיבור להפך
+כמו על כל מצוה שגזר וצוה להפך בדיבור אחד כגון שבת לא <quote source="Exo_31_15" type="biblical"><sic>ת</sic>עשה מלאכה <sic>ומחלליה ו</sic>ביום השבת</quote> שני
+כבשים כך כאן וזהו <quote source="Amo_4_13" type="biblical">מגיד לאדם מה שיחו</quote> וסמך לו <quote source="Amo_4_13" type="biblical">עושה שחר <sic>ו</sic>עיפה</quote> ואנה הוגד ב<term type="tagin">תגין</term> שרמז שעתיד להפך וסמך
+לו יוצר הרים ומהפכת סדום שהפך ההרים ולמטה <quote source="Amo_5_8" type="biblical">עושה <sic>כסיל וכימה</sic> הופך לבוקר צלמות ויום</quote> ללילה החשיך כי 
+בקריאות ש<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">ב</rdg></app><?oxy_custom_end?>אור ולילה ב<name key="T00012" type="topos">מעשה בראשית</name> רמז שגזר להיות בעתו <quote source="Amo_5_18" type="biblical">למה זה לכם יום <sic>ה'</sic> חושך ולא אור</quote> ואפול ולא נגה לו
+וכתיב האומר לחרס ולא יזרח ובער כוכבים יחתום וכן <quote source="Gen_1_2" type="biblical">ורוח אלהים מרחפת</quote> שאז גזר שא'ע'פ' שמרחפת הוא בנחת
+גזר אז שבימי <name key=" P00039" type="person">יונה</name> בשעה אחת הרוח הולך וסוער ואחר<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">שהטילוהו לים</rdg></app><?oxy_custom_end?>שהעלותו בים שקט וזהו <quote source="Amo_4_13" type="biblical">ובורא רוח מגיד לאדם מה שיחו</quote>וכן <term type="tagin">תגין</term> על ה' אלהים שלא יאמר אילו יש לפניו ידיעת העתיד וכן כתי' <quote source="Gen_6_6" type="biblical">וינחם כי עשה את האדם</quote> אמחה וגו'
+לא היה בורא העולם לכך עשה <term type="term">תגין</term> שבתחילת היצירות רמז לך ב<term type="tagin">תגין</term> שהרבה דברים יהפך האור כי <rs type="script" subtype="tagin" style="teth_4">ט</rs>וב
+ט' אין<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">בעשרת</rdg></app><?oxy_custom_end?>בי' דברות<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg type="textcritical" wit="#Tagin_Shunak">טית</rdg></app><?oxy_custom_end?>כי טית ב<term type="Atbash">א'ת ב'ש</term> אמן <quote source="Deu_32_20" type="biblical">בנים לא אמר אמון בם</quote> וכתיב לא נאמנה את אל רוחו וב' טיתין בלוחות
+שניות על שם <quote type="biblical" source="Jes_14_23">וטאטאתיה במטאטא השמד</quote> וכתיב ואמחה את שמם טית אם לא שקיבלו התורה היה
+העולם חוזר לטיט כבתחילה כי טוב<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg type="textcritical" wit="#Tagin_Shunak">נוגה</rdg></app><?oxy_custom_end?>טית כי כשנתן התורה נעשה אור כאור ראשון שנ' <quote source="Hab_3_4" type="biblical">ונוגה כאור תהיה
+<sic>וכתיב</sic> וקרנים מידו</quote> שבאו מלאכים ונתנו להם שני אורים כנגד <quote source="Exo_24_7" type="biblical">נעשה ונשמע</quote> ומנין שיש לברך על הטלית
+תחילה לברכות שנ' ברכי נפשי את יי' <quote source="Psa_104_1-2" type="biblical">הוד והדר לבשת עוטה אור</quote> ביום כשבא לבראות עולם תחילה הוד והדר 
+לבשת <quote source="Psa_104_2" type="biblical">עוטה אור כשלמה</quote> ואחר כך נוטה שמים כך אדם יתעטף בציצית ואחר כך יעשה מלאכתו האור <rs type="script" subtype="tagin" style="teth_4">ט</rs>' 
+ברכות יוצר כולה ד' ד' יוצר ובורא עושה ובורא המרומם המשובח המפואר והמתנשא וכן על פני כולו ד' ד'
+
+<pb n="247r"/>
+
+
+כמו <term type="tagin">תגי</term> ל<rs type="script" subtype="tagin" style="teth_4">ט</rs>' נגד ד' <quote source="Hab_3_4" type="biblical">ונוגה כאור <sic>ו</sic>קרנים</quote> עוזו לד' רוחות א'ע'פ' ש<quote source="Deu_33_2" type="biblical">מימינו אש דת</quote> מקיף שנ'<quote source="Deu_32_10" type="biblical"> יסובבנהו יבוננהו</quote> וכן ד'
+<quote source="Job_28_27" type="biblical">אז ראה ויספרה</quote> ה<name key="T00003" type="topos">בינה</name> חקרה לכך תיקנו ד' בברכת יוצר ותיקנו ט' פועל גבורות עושה חדשות בעל מלחמות זורע
+צדקות מצמיח ישועות בורא רפואות <quote source="Exo_15_7" type="biblical">נורא תהילות</quote> אדון הנפלאות המחדש בטובו וכולם נקראו אור וזהו כאמור
+<quote source="Psa_136_7" type="biblical">לעושה אורים גדולים</quote><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">לעושה אורים גדולים</rdg></app><?oxy_custom_end?>הוא בשיטה ז' הודו לאלהים הודו לאדוני<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">הודו לה'</rdg></app><?oxy_custom_end?>האדונים <quote source="Psa_136_4" type="biblical">לעושה נפלאות</quote> לעושה השמים לרוקע הארץ
+<quote source="Psa_136_7" type="biblical">לעושה אורים</quote><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg type="textcritical" wit="#Tagin_Shunak"> גדולים</rdg></app><?oxy_custom_end?>כנגד ז' אורים <quote source="Jes_60_1-2" type="biblical">קומי אורי כי בא אורך עליך <sic>זרח</sic> יזרח יי'<sic> </sic>עליך יראה</quote><quote source="Jes_60_3" type="biblical"> גוים לאורך ומלכים לנוגה זרחיך</quote>באותה הפטרה ז' וזהו כאור<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">שבעת</rdg></app><?oxy_custom_end?>ז' הימים <quote source="Jes_60_19" type="biblical">השמש לאור<sic> </sic>ולנוגה הירח לא יאיר לך והיה לך<sic> </sic>לאור עולם</quote> ג' <quote source="Jes_60_2" type="biblical">עליך<sic> </sic>זרח</quote> ועליך יזרח
+עליך יראה נגד ג' <quote source="Jes_59_21" type="biblical">מפיך<sic> </sic>מפי זרעיך ומפי זרע זרעיך</quote> וג' <quote source="Jes_60_20" type="biblical">יי' לך לאור עולם</quote> <quote source="Jes_60_19" type="biblical">יי' לאור עולם ואלהיך לתפארתך</quote> וג' כשחר
+אורך <quote source="Jes_58_10" type="biblical">וזרח בחושך אורך ואפלתך כצהרים</quote> הרי ג' ג' ג' אורות לכך <term type="tagin">תגין</term> על ט' ולכך תקנו ט' על יוצר המאורות
+אור ואור <quote source="Pro_4_18" type="biblical">צדיקים כאור נוגה</quote> וכתיב <quote source="Hab_3_4" type="biblical">ונוגה כאור תהיה</quote> אור נוגה ב<term type="gematria">גימטריא</term> הריון <quote source="Job_29_3" type="biblical">בהילו נרו עלי ראשי</quote> כל ימי הריון
+שהולד במעי אמו <quote source="Hag_12_8" type="rabbinical">צופה מסוף העולם ועד סופו</quote> ד'א כאור נוגה כאותו האור שממנו יוצא נוגה וכתיב <quote source="Psa_18_13" type="biblical">מנוגה נגדו
+עביו</quote> וכתיב <quote source="Eze_1_13" type="biblical">ונוגה לאש</quote> מה שמאיר מסביב בתוקף האור נקרא נוגה וכדי שלא להשוות את הצדיקים לאור <name key=" T00009" type="topos">שכינה</name>
+שהרי כתיב <quote source="Hab_3_4" type="biblical">ונוגה כאור תהיה</quote> אור זה גוף האור נוגה הזורח מנגד כמים המונח בחמה הזורחת<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg type="textcritical" wit="#Tagin_Shunak">דרך</rdg></app><?oxy_custom_end?>נגד נקב וחלון
+והזוהר מלמעלה ואותו נגה של <name key="T00007" type="topos">כבוד</name> <name key="T00009" type="topos">שכינה</name> כאור תהיה בין אור הצדיקים כאור שקרנים לו שנ' <quote source="Hab_3_4" type="biblical">וקרנים מידו לו</quote> ואי
+זה אור באצבעות ידים זה אור <sic>זה אור<note>Hier ist eine Textdoppelung, vermutl. Schreiberfehler</note></sic> הראשון האור כי טוב הנוגה כאור שנברא ביום ראשון ולאור אין קץ ואור
+<quote source="Pro_4_18" type="biblical">צדיקים כאור נוגה</quote> ולא כאור ואותו הנוגה גדול כאור החמה שנ' <quote source="Jes_24_23" type="biblical">ובושה החמה</quote> <quote source="Jes_24_23" type="biblical">ונגד זקניו כבוד</quote> ולפי שכת'<quote source="Gen_1_4" type="biblical"> האור
+כי טוב</quote> מפורש ובכל הברואים לא אמר בפירוש אלא כי טוב לכך אומר בברכת אור ובטובו מחדש בכל יום תמיד
+מעשה<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg type="textcritikal" wit="#Tagin_Oxf_111">בראשית</rdg></app><?oxy_custom_end?>לפי שמצינו<quote source="Psa_19_5" type="biblical"> ולשמש שם אהל בהם</quote> ואצלו תורת יי' תמימה וכתיב<quote source="Pro_6_23" type="biblical"> ותורה אור</quote> ובמתן תורה כתיב <quote source="Hab_3_4" type="biblical">ונוגה כאור
+תהיה</quote> ולכך בברכת המאורות בא' בי'ת ואור שהבדיל לצדיקים שמ'ג ידות על החמה וכשתוסיף כ'ב אותיות
+יהיה שס'ה לצדיקים שקיימו התורה מא' ועד ת' ולכך הוסיפו האחרונים אור חדש על ציון ונזכה כלנו 
+במהרה לאורו וגם בברכת מעריב אל חי וקיים תמיד ימלוך לפי שכתיב <quote source="Jes_24_23" type="biblical">וחפרה הלבנה ובושה החמה כי מלך ה'
+צבאות</quote> לכך אצל יי' צבאות שמו מזכירין מלכותו יהי אור האור כי טוב לרבות ולמעט וכן ולמ<rs type="script" subtype="tagin" style="shin_3">ש</rs>ול לרבות אפילו
+במסתרים ובמחשכים כגון <rs type="rabbinical" source="BerR_31_11" subtype="free" cert="high">צוהר תעשה לתיבה ר' נחוניא ור' פנחס ר' חנין ור' אושעיא ר' אבא בר כהנא אמור
+
+<pb n="247v"/>
+
+חלון ור' לוי<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg type="textcritical" wit="#Tagin_Shunak">מפרשין ר' אבא בר כהנא אמר חלון ור' לוי</rdg></app><?oxy_custom_end?>אמר מרגליות ר' פנחס בשם ר' לוי אמר כל שנים עשר חדש שהיה נח בתבה לא צרך לא לאור החמה
+ביום ולא לאור הלבנה בלילה אלא מרגלית היה לו וכשהיה תולה אותה בתיבה בשעה שהיתה כהה היה יודע שהוא 
+יום ובשעה שהיתה מבהקת היה יודע שהוא לילה</rs> הרי ולמשול אף בחשך מכהה אור ואבן ואורו נרות ולמעט
+שאינו שולט אלא על אור של זה העולם אבל לא על אור של מעלה כי ביום ובלילה אינו משתנה שנאמר <quote source="Psa_139_12" type="biblical">כחשיכה
+כאורה</quote> ואין אור שמש וחמה מושלים כנגד גן עדן ששושנים וגיהנם מאדימין <rs type="script" subtype="tagin" style="shin_4"><g facs="#ST_Oxf_540_247v_shin_4">ש</g></rs>' של ולמ<rs subtype="tagin" type="script" style="shin_7"><g facs="#ST_Oxf_540_247v_shin_7_valimshol">ש</g></rs>ול שמשנים פניהם
+ופני צדיק לעתיד <quote source="Jes_24_23" type="biblical">וחפרה הלבנה ובושה החמה</quote> <quote source="Jes_24_23" type="biblical">ונגד זקניו כבוד</quote> ואבני גן עדן אין נכהין באור המאורות
+<quote source="Gen_3_13" type="biblical">הנחש השיאני</quote> ח' דברים והוא השמיני ז' יתרפאו והשמיני רגלו שבורה <quote source="Jes_11_7" type="biblical">וגר זאב עם כבש ונמר עם גדי ירבץ ועגל
+וכפיר ומריא יחדיו</quote> ופרה ודוב תרעינה ואריה כבוקר יאכל תבן <quote source="Jes_11_6" type="biblical">ונער קטן</quote> <quote source="Jes_11_8" type="biblical">יונק על חור פתן</quote> צפעוני גמול ידו <quote source="Jes_65_25" type="biblical"> זאב
+וטלה<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">יראו</rdg></app><?oxy_custom_end?>ירעו כאחד ואריה כבקר יאכל<sic> </sic>ונחש עפר לחמו</quote> לכך <quote source="Gen_3_13" type="biblical">הנחש הישיאני</quote> הנתש ח' שבורה לחיגר שנשברה רגלו
+רמז שהעיור רכב עליו ואכלו הפירות כך ידונו הנפש והגוף אילו לא חטאו היה <quote source="Jes_11_6" type="biblical">גר זאב עם כבש</quote> הנח שהישיאני
+הנחה וביטול <quote source="Ket_5_5" type="rabbinical"><sic>ה</sic>בט<sic>י</sic>לה מביאה לידי שעמום</quote> ועבירה הן חש הישיאני כשיבוא<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg type="textcritical" wit="#Tagin_Shunak">מי</rdg></app><?oxy_custom_end?>מן שכתוב בו <quote source="Exo_4_1" type="biblical">הן לא יאמינו לי</quote> וחש
+בזה הדבר שלקה בצרעת כך זה נחש ולכך <rs source="Exo_7_15" type="rabbinical" subtype="free" cert="high">נהפך המטה לנחש</rs> הנח שהישאני שבקשה ממני שלא יעשה לנחש
+רע וחפצה בנחש יותר מבעלה ולכך <quote source="Gen_3_15" type="biblical">ואיבה אשית ביניך ובין האשה</quote> ח' לא יוליד<app><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><rdg type="textcritical" wit="#Tagin_Shunak">עד</rdg><?oxy_custom_end?></app>עם לאח<unclear reason="illegible">ד</unclear> ז' שנים הנחש ח' שנה
+וכן האותיות ח' בא עליה לקיים בו לנפיל ירך ובאשה וצבתה בטנה לאלה וכן חתיתו הנחש ח' ואחבא
+גחונך ח' חית <quote source="Pro_6_27" type="biblical">היחתה איש אש בחיקו ובגדיו לא תשרפנה</quote> באש תשרפנ<quote source="Lev_13_57" type="biblical">ו<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?><app><rdg wit="#Tagin_Shunak" type="textcritical">אחר</rdg></app><?oxy_custom_end?>את אשר בו הנגע</quote> ושרף מן הבגד
+<quote source="Pro_6_33" type="biblical">נגע וקלון ימצא</quote> והנחש נצטרע <quote source="Pro_6_28" type="biblical">אם יהל<sic>ו</sic>ך איש על הגחלים ורגליו לא תכוינה</quote> <quote source="Gen_3_14" type="biblical">על גחונך תלך</quote> קצצו לנחש רגליו
+נואף <quote source="Gen_3_13" type="biblical">אשה הנחש השיאיני</quote> מי שעושה מעשה נחש נפרעים ממנו בנחש שנ' <quote source="Jer_8_17" type="biblical">כי הנני משלח <sic>בם</sic> צפעונים
+אשר אין להם לחש ונשכו</quote> וסמך לו <quote source="Jer_9_7" type="biblical">חץ שחוט לשונם מרמה דבר</quote> <quote source="Psa_140_4" type="biblical">שננו לשונם כמו נחש</quote> ח' ח' מיני זוהמא והיא
+נטמאה והיא נטמאה <quote source="Num_5_14" type="biblical">והיא לא נטמאה</quote><quote source="Num_5_19" type="biblical"> לא שטית טומאה</quote> וכי נטמאת אם נטמאה ואם לא נטמאה
+ונטמאה ואם תסיר לא נטמאה לא שטית טמאה לא נטמאה ישארו ה' טומאות כך ה' נחש בענין בבראשית
+וה' נחש <quote source="Num_21_6" type="biblical">וישלח<sic> </sic>בעם<sic> </sic>הנחשים השרפים</quote> הנחש שרף נחש נחש הנחשת נחש הנחשת <quote source="Num_21_6" type="biblical">הנחשים השרפים</quote>וה' בשבועות האלה <quote source="Num_5_21" type="biblical">לאלה ולשבועה</quote> האלות לאלה וה' לא תאכל לא תאכלו ולא תאכלו אכל לא תאכלו וה'
+  
+</p></body></text>
+</TEI>

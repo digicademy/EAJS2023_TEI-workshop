@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text>
+    <poem type="lullaby">      
+        <stanza>
+            <line nr="1"/>Roses are red 
+            <line nr="2"/>violets are blue
+        </stanza>
+    </poem>
+</text>

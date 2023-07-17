@@ -6,13 +6,13 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Akrostich and Akronym</title>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p>EAJS 2023 DF workshop</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>born digital</p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
@@ -20,9 +20,10 @@
       <body>
          <lg rhyme="AAAAA">
             <head>קינה‏</head>
-            <l><seg type="acrost">ל</seg>בן יקיר בוכים בך</l>
-            <l><seg type="acrost">‎י</seg>לד הרך מה רב טובך‏</l>
-            <l><seg type="acrost">ב</seg>יום מר שושן נבך‏</l>
+            <l><seg ana="acrost acronym" n="1">ל</seg>בן <seg ana="acronym">י</seg>קיר <seg
+                  ana="acronym">ב</seg>וכים בך</l>
+            <l><seg ana="acrost">‎י</seg>לד הרך מה רב טובך‏</l>
+            <l><seg ana="acrost">ב</seg>יום מר שושן נבך‏</l>
             <l>יהודא ליב עפר שבך‏</l>
             <l>‎‏בהר״ר יצחק ריינבך‏</l>
          </lg>

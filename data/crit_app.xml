@@ -6,26 +6,31 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>poem</title>
+            <title>critical apparatus</title>
          </titleStmt>
          <publicationStmt>
             <p>EAJS 2023 DF workshop</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <listWit>
+               <witness n="1" xml:id="a">Variant A</witness>
+               <witness n="2" xml:id="b">Variant B</witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="images/versionA.jpg" xml:id="vara"/>
+      <graphic url="images/versionB.jpg" xml:id="varb"/>
+   </facsimile>
    <text xml:lang="he">
       <body>
-         <lg rhyme="AAAAA">
-            <head>קינה‏‎</head>
-            <l>לבן יקיר בוכים בך</l>
-            <l>ילד הרך מה רב טובך‏</l>
-            <l>ביום מר שושן נבך‏</l>
-            <l>יהודא ליב עפר שבך‏</l>
-            <l>בהר״ר יצחק ריינבך</l>
-         </lg>
+         <pb ed="#a" facs="#vara"/>
+         <pb ed="#b" facs="#varb"/>
+         <p>אנכנו נפגשים<app>
+               <rdg wit="#a">בפרנקפורט</rdg>
+               <rdg wit="#b">בפפ״ם</rdg>
+            </app> באוניברסיטה </p>
       </body>
    </text>
 </TEI>

@@ -6,26 +6,27 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>poem</title>
+            <title>example from EAJS workshop</title>
          </titleStmt>
          <publicationStmt>
             <p>EAJS 2023 DF workshop</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born Digital</p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
-   <text xml:lang="he">
+   <text>
       <body>
-         <lg rhyme="AAAAA">
-            <head>קינה‏‎</head>
-            <l>לבן יקיר בוכים בך</l>
-            <l>ילד הרך מה רב טובך‏</l>
-            <l>ביום מר שושן נבך‏</l>
-            <l>יהודא ליב עפר שבך‏</l>
-            <l>בהר״ר יצחק ריינבך</l>
-         </lg>
+         <opener>
+            <dateline><placeName>Krefeld</placeName>
+               <date when="2022-03-25">25/3/2022</date></dateline>
+            <salute>Dear Daniel, </salute></opener>
+         <p>I'm looking forward to see you today.</p>
+         <closer>
+            <salute>best wishes</salute>
+            <signed><persName ref="https://d-nb.info/gnd/1063010942"
+                  >Thomas</persName></signed></closer>
       </body>
    </text>
 </TEI>
