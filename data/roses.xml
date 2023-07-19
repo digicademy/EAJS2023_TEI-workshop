@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_poetry.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_poetry.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A bouquet of roses. Collection</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>EAJS2023 Frankfurt DH classes</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>born digital</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         
+         <lg>
+            <head>Benny Hill</head>
+            <l>Roses are yellow</l>
+            <l>Violets are bluish</l>
+            <l>If it weren't for Christmas</l>
+            <l>We'd all be Jewish.</l>
+         </lg>
+         <!--  taken from article Roses are Red 
+               https://en.wikipedia.org/w/index.php?title=Roses_Are_Red&oldid=1162358769 
+               source: Lawrence Dorfman (2013). Snark! The Herald Angels Sing: 
+               Sarcasm, Bitterness and the Holiday Season. Skyhorse Publishing.-->
+         <lg>
+            <head>Louis Armstrong</head>
+            <l>I see trees of green</l>
+            <l>Red roses too</l>
+            <l>I see them bloom</l>
+            <l>For me and you</l>
+            <l>And I think to myself</l>
+            <l>What a wonderful world</l>
+         </lg>
+      </body>
+   </text>
+</TEI>
