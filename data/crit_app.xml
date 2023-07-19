@@ -27,7 +27,7 @@
       <body>
          <pb ed="#a" facs="#vara"/>
          <pb ed="#b" facs="#varb"/>
-         <p>אנכנו נפגשים<app>
+         <p>אנחנו נפגשים<app>
                <rdg wit="#a">בפרנקפורט</rdg>
                <rdg wit="#b">בפפ״ם</rdg>
             </app> באוניברסיטה </p>
