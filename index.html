@@ -585,14 +585,20 @@ Thomas</code></pre>
             <div class="step">
                 <h2>epiDoc</h2>
                 <h3>Ancient|Epigraphic Documents in TEI XML</h3>
-                <blockquote><a href="https://epidoc.stoa.org/gl/latest/" target="blank">EpiDoc</a> is an international, collaborative effort that provides guidelines and tools for encoding scholarly and educational editions of ancient documents. These pages are the EpiDoc Guidelines produced by the collaborative. In addition, the EpiDoc Website provides access to other tools and collaboration environments supported by the collaborative.</blockquote>
+                <blockquote><a href="https://epidoc.stoa.org/gl/latest/" target="blank"
+                    >EpiDoc</a> is an international, collaborative effort that provides guidelines and tools for encoding scholarly and educational editions of ancient documents. These pages are the EpiDoc Guidelines produced by the collaborative. In addition, the EpiDoc Website provides access to other tools and collaboration environments supported by the collaborative.</blockquote>
                 <ul>
-                    <li><code><a href="https://epidoc.stoa.org/gl/latest/" target="blank">EpiDoc</a></code> is 100% TEI</li>
+                    <li><code><a href="https://epidoc.stoa.org/gl/latest/" target="blank"
+                            >EpiDoc</a></code> is 100% TEI</li>
                     <li>a subset of the TEI</li>
                     <li>not only in use by scholars of Epigraphy and Papyrology but also by projects dealing with unique sources</li>
                     <li>EpiDoc is less suited for texts with many variants</li>
-                               <li><a href="https://raw.githubusercontent.com/EpiDoc/Source/main/guidelines/xml/ex-epidoctemplate.xml" target="blank">Epigraphical template</a></li> </ul>
-
+                    <li>
+                        <a
+                            href="https://raw.githubusercontent.com/EpiDoc/Source/main/guidelines/xml/ex-epidoctemplate.xml"
+                            target="blank">Epigraphical template</a>
+                    </li>
+                </ul>
             </div>
             <div class="step">
                 <h2>Why?</h2>
@@ -609,16 +615,31 @@ Thomas</code></pre>
                 <ul>
                     <li>Xpath to element <pre><code>//date</code></pre></li>
                     <li>Xpath to attribute <pre><code>//@when</code></pre></li>
-                    <li>Xpath to <code>p</code> in <code>teiHeader</code> <pre><code>//teiheader//p</code></pre></li>
+                    <li>Xpath to <code>p</code> in <code>teiHeader</code>
+                        <pre><code>//teiheader//p</code></pre></li>
                     <li>Xpath to <code>p</code> in <code>text</code><pre><code>//text//p</code>
-                </pre></li></ul>
-                <p class="x-small right up-100"><a href="https://devhints.io/xpath">Xpath cheatsheet</a></p>
-       </div>
+                </pre></li>
+                </ul>
+                <p class="x-small right up-100">
+                    <a href="https://devhints.io/xpath">Xpath cheatsheet</a>
+                </p>
+            </div>
             <div class="step">
                 <h2>handsOn</h2>
                 <h3>ODD - TEI Customizing</h3>
-                
-                <blockquote><a href="http://roma.tei-c.org">Roma</a> is an ODD Editor, using the TEI ODD (One Document Does-it-all) format for meta-schema documentation and local encoding guidelines as created by the Text Encoding Initiative.</blockquote>
+                <blockquote><a href="http://roma.tei-c.org"
+                    >Roma</a> is an ODD Editor, using the TEI ODD (One Document Does-it-all) format for meta-schema documentation and local encoding guidelines as created by the Text Encoding Initiative.</blockquote>
+                <ul>
+                    <li>
+                        <a href="data/tei_minimal.odd">
+                            <code><a href="data/tei_minimal.odd" target="blank">tei_minimal.odd</a></code>
+                        </a>
+                    </li>
+                    <li><a href="data/tei_poetry.odd"
+                            ><code><a href="data/tei_poetry.odd" target="blank">tei_poetry.odd</a></code></a> based on <code>tei_minimal.odd</code><ul><li><code>tei_poetry.rng</code> validation schema</li>
+                            <li><code><a href="data/tei_poetry.html" target="blank">tei_poetry.html</a></code> guidelines / documentation</li>
+                            <li><code><a href="data/roses.xml">roses.xml</a></code> example file validated against tei_poetry schema</li></ul></li>
+                </ul>
             </div>
             <div class="step">
                 <h2>you are not alone</h2>
